@@ -100,7 +100,7 @@
 微信移动客户端开发团队: WeMobileDev
 微信阅读团队技术博客
 腾讯Bugly，微信公众号: 腾讯Bugly">
-<meta property="og:updated_time" content="2016-07-15T05:52:27.000Z">
+<meta property="og:updated_time" content="2016-07-15T05:54:04.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo博客搭建">
 <meta name="twitter:description" content="WordPress搭建博客的方式不太适应技术记录与分享，搭建复杂，需要自己的主机进行Host。而一般的技术博客，只需要静态网页就能满足需求。目前比较流行的是Hexo与Jekyll，后者的搭建过于复杂，所以目前Hexo较为流行。目前几家做的比较好的团队技术博客：
@@ -311,7 +311,7 @@
 </ul>
 <h2 id="评论设置"><a href="#评论设置" class="headerlink" title="评论设置"></a>评论设置</h2><p>采用disqus评论系统，设置过程也非常简单，可以参考：<a href="https://github.com/iissnan/hexo-theme-next/wiki/%E8%AE%BE%E7%BD%AE%E5%A4%9A%E8%AF%B4-DISQUS" target="_blank" rel="external">https://github.com/iissnan/hexo-theme-next/wiki/%E8%AE%BE%E7%BD%AE%E5%A4%9A%E8%AF%B4-DISQUS</a></p>
 <h1 id="3-部署"><a href="#3-部署" class="headerlink" title="3.部署"></a>3.部署</h1><p>我才用的部署方式git，配置与使用都非常简单，一行代码就能编译然后部署博客静态网页：<br><a href="https://hexo.io/zh-cn/docs/deployment.html" target="_blank" rel="external">https://hexo.io/zh-cn/docs/deployment.html</a></p>
-<p>这里有个比较奇怪的问题，在修改post之后，deploy始终无法更新，总是提示 “nothing to commit…”，解决方式：<a href="https://github.com/hexojs/hexo/issues/67" target="_blank" rel="external">https://github.com/hexojs/hexo/issues/67</a>。调用下面三行命令清除缓存再部署：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">1.rm -rf .deploy</div><div class="line">2.hexo generater</div><div class="line">3.hexo deploy</div></pre></td></tr></table></figure></p>
+<p>这里有个比较奇怪的问题，在修改post之后，deploy始终无法更新，总是提示 “nothing to commit…”，解决方式：<a href="https://github.com/hexojs/hexo/issues/67" target="_blank" rel="external">https://github.com/hexojs/hexo/issues/67</a>。调用下面三行命令清除缓存再部署：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">rm -rf .deploy</div><div class="line">hexo generater</div><div class="line">hexo deploy</div></pre></td></tr></table></figure></p>
 
       
     </div>
