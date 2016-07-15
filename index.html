@@ -225,6 +225,130 @@
             
               
                 
+                <a class="post-title-link" href="/2016/07/15/hexo-blog-setup/" itemprop="url">
+                  Hexo博客搭建
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-07-15T13:51:26+08:00" content="2016-07-15">
+              2016-07-15
+            </time>
+          </span>
+
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/07/15/hexo-blog-setup/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/07/15/hexo-blog-setup/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>WordPress搭建博客的方式不太适应技术记录与分享，搭建复杂，需要自己的主机进行Host。而一般的技术博客，只需要静态网页就能满足需求。目前比较流行的是Hexo与Jekyll，后者的搭建过于复杂，所以目前Hexo较为流行。目前几家做的比较好的团队技术博客：</p>
+<ul>
+<li><a href="http://tech.meituan.com/" target="_blank" rel="external">美团点评技术团队</a></li>
+<li>微信移动客户端开发团队: <strong>WeMobileDev</strong></li>
+<li><a href="http://wereadteam.github.io/" target="_blank" rel="external">微信阅读团队技术博客</a></li>
+<li><a href="http://dev.qq.com/" target="_blank" rel="external">腾讯Bugly</a>，微信公众号: <strong>腾讯Bugly</strong></li>
+<li><a href="http://baiduhidevios.github.io/" target="_blank" rel="external">百度Hi技术周报</a></li>
+<li><a href="http://eleme.io/mobilists/" target="_blank" rel="external">饿了么用户端技术博客</a></li>
+<li><a href="http://mobilefrontier.github.io/" target="_blank" rel="external">移动开发前线</a></li>
+<li>微信公众号：<strong>QQ空间终端开发团队</strong></li>
+</ul>
+<h1 id="github-io"><a href="#github-io" class="headerlink" title="github.io"></a>github.io</h1><p>首先，创建github.io，用来host我们要生成的静态博客。创建的方式非常简单，参考：<a href="https://pages.github.com/" target="_blank" rel="external">https://pages.github.com/</a></p>
+<h1 id="Hexo安装"><a href="#Hexo安装" class="headerlink" title="Hexo安装"></a>Hexo安装</h1><p>Hexo是基于Node.js构建的，使用npm进行安装管理非常便捷：<a href="https://pages.github.com/" target="_blank" rel="external">https://pages.github.com/</a>。</p>
+<p>整体的安装与使用官方文档讲解的非常清晰，参考文档能快速完成搭建工作。在搭建的过程中，有几点需要注意一下：</p>
+<h1 id="1-分类与标签"><a href="#1-分类与标签" class="headerlink" title="1. 分类与标签"></a>1. 分类与标签</h1><p>这点与WP这种动态网站不同，不需要额外创建分类与标签，只需要在post的文档顶部配置 <code>categories</code> 与 <code>tags</code> 即可，hexo在构建静态网页的时候，会自动进行提取归类。例如：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">---</div><div class="line">title: Modern PHP -- 读书笔记</div><div class="line">date: 2016-07-14 18:40:28</div><div class="line">tags:</div><div class="line">    - PHP</div><div class="line">categories:</div><div class="line">    - Jason</div><div class="line">---</div></pre></td></tr></table></figure></p>
+<p>对于团队技术博客而言，categories可以设置为团队成员的名称，这样就能比较好归纳。</p>
+<h1 id="2-主题"><a href="#2-主题" class="headerlink" title="2. 主题"></a>2. 主题</h1><h2 id="设置"><a href="#设置" class="headerlink" title="设置"></a>设置</h2><p>我采用的主题与微信阅读团队的一致，Next Mist主题。具体的搭建过程可以参考：</p>
+<ul>
+<li><a href="https://github.com/iissnan/hexo-theme-next" target="_blank" rel="external">https://github.com/iissnan/hexo-theme-next</a></li>
+<li><a href="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="external">http://theme-next.iissnan.com/getting-started.html</a></li>
+</ul>
+<h2 id="评论设置"><a href="#评论设置" class="headerlink" title="评论设置"></a>评论设置</h2><p>采用disqus评论系统，设置过程也非常简单，可以参考：<a href="https://github.com/iissnan/hexo-theme-next/wiki/%E8%AE%BE%E7%BD%AE%E5%A4%9A%E8%AF%B4-DISQUS" target="_blank" rel="external">https://github.com/iissnan/hexo-theme-next/wiki/%E8%AE%BE%E7%BD%AE%E5%A4%9A%E8%AF%B4-DISQUS</a></p>
+<h1 id="3-部署"><a href="#3-部署" class="headerlink" title="3.部署"></a>3.部署</h1><p>我才用的部署方式git，配置与使用都非常简单，一行代码就能编译然后部署博客静态网页：<br><a href="https://hexo.io/zh-cn/docs/deployment.html" target="_blank" rel="external">https://hexo.io/zh-cn/docs/deployment.html</a></p>
+<p>这里有个比较奇怪的问题，在修改post之后，deploy始终无法更新，总是提示 “nothing to commit…”，解决方式：<a href="https://github.com/hexojs/hexo/issues/67" target="_blank" rel="external">https://github.com/hexojs/hexo/issues/67</a>。调用下面三行命令清除缓存再部署：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">1.rm -rf .deploy</div><div class="line">2.hexo generater</div><div class="line">3.hexo deploy</div></pre></td></tr></table></figure></p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/07/14/modern-php-one/" itemprop="url">
                   Modern PHP -- 读书笔记
                 </a>
@@ -475,7 +599,7 @@
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/">
-              <span class="site-state-item-count">1</span>
+              <span class="site-state-item-count">2</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
