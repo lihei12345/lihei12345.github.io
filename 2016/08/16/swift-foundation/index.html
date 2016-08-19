@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="iOS,Swift," />
+  <meta name="keywords" content="Swift," />
 
 
 
@@ -84,25 +84,18 @@
 
 
 
-<meta name="description" content="常用框架CocoaPodsSwift + PodsCocoapods从0.36开始通过动态库的形式提供对Swift项目的支持。我们只需要在Podfile中注明，use_frameworks!即可，要求项目的最低版本是iOS 8。pods采用动态库的主要原因是因为目前iOS操作系统中并没有自带Swift的运行时支持库，所以所有包含Swift的代码无法被编译为静态库。
-参考：
-
-https://blo">
+<meta name="description" content="常用框架CocoaPodsSwift + PodsCocoapods从0.36开始通过动态库的形式提供对Swift项目的支持。我们只需要在Podfile中注明，use_frameworks!即可，由于需要支持动态库，所以要求项目的最低版本是iOS 8。Pods采用动态库的主要原因是因为目前iOS操作系统中并没有内置Swift的运行时支持库，这种情况下所有包含Swift的代码无法被编译为静态库，Sw">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Swift实践初探">
 <meta property="og:url" content="http://lihei12345.github.io/2016/08/16/swift-foundation/index.html">
 <meta property="og:site_name" content="lihei12345">
-<meta property="og:description" content="常用框架CocoaPodsSwift + PodsCocoapods从0.36开始通过动态库的形式提供对Swift项目的支持。我们只需要在Podfile中注明，use_frameworks!即可，要求项目的最低版本是iOS 8。pods采用动态库的主要原因是因为目前iOS操作系统中并没有自带Swift的运行时支持库，所以所有包含Swift的代码无法被编译为静态库。
-参考：
-
-https://blo">
-<meta property="og:updated_time" content="2016-08-19T06:32:13.000Z">
+<meta property="og:description" content="常用框架CocoaPodsSwift + PodsCocoapods从0.36开始通过动态库的形式提供对Swift项目的支持。我们只需要在Podfile中注明，use_frameworks!即可，由于需要支持动态库，所以要求项目的最低版本是iOS 8。Pods采用动态库的主要原因是因为目前iOS操作系统中并没有内置Swift的运行时支持库，这种情况下所有包含Swift的代码无法被编译为静态库，Sw">
+<meta property="og:image" content="http://lihei12345.github.io/img/swift-foundation-dylib-screenshot.png">
+<meta property="og:updated_time" content="2016-08-19T07:18:21.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Swift实践初探">
-<meta name="twitter:description" content="常用框架CocoaPodsSwift + PodsCocoapods从0.36开始通过动态库的形式提供对Swift项目的支持。我们只需要在Podfile中注明，use_frameworks!即可，要求项目的最低版本是iOS 8。pods采用动态库的主要原因是因为目前iOS操作系统中并没有自带Swift的运行时支持库，所以所有包含Swift的代码无法被编译为静态库。
-参考：
-
-https://blo">
+<meta name="twitter:description" content="常用框架CocoaPodsSwift + PodsCocoapods从0.36开始通过动态库的形式提供对Swift项目的支持。我们只需要在Podfile中注明，use_frameworks!即可，由于需要支持动态库，所以要求项目的最低版本是iOS 8。Pods采用动态库的主要原因是因为目前iOS操作系统中并没有内置Swift的运行时支持库，这种情况下所有包含Swift的代码无法被编译为静态库，Sw">
+<meta name="twitter:image" content="http://lihei12345.github.io/img/swift-foundation-dylib-screenshot.png">
 
 
 
@@ -253,6 +246,25 @@ https://blo">
           </span>
 
           
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/iOS/" itemprop="url" rel="index">
+                    <span itemprop="name">iOS</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
 
           
             
@@ -282,7 +294,8 @@ https://blo">
       
 
       
-        <h1 id="常用框架"><a href="#常用框架" class="headerlink" title="常用框架"></a>常用框架</h1><h2 id="CocoaPods"><a href="#CocoaPods" class="headerlink" title="CocoaPods"></a>CocoaPods</h2><h3 id="Swift-Pods"><a href="#Swift-Pods" class="headerlink" title="Swift + Pods"></a>Swift + Pods</h3><p>Cocoapods从0.36开始通过动态库的形式提供对Swift项目的支持。我们只需要在Podfile中注明，<code>use_frameworks!</code>即可，要求项目的最低版本是iOS 8。pods采用动态库的主要原因是因为目前iOS操作系统中并没有自带Swift的运行时支持库，所以所有包含Swift的代码无法被编译为静态库。</p>
+        <h1 id="常用框架"><a href="#常用框架" class="headerlink" title="常用框架"></a>常用框架</h1><h2 id="CocoaPods"><a href="#CocoaPods" class="headerlink" title="CocoaPods"></a>CocoaPods</h2><h3 id="Swift-Pods"><a href="#Swift-Pods" class="headerlink" title="Swift + Pods"></a>Swift + Pods</h3><p>Cocoapods从0.36开始通过动态库的形式提供对Swift项目的支持。我们只需要在Podfile中注明，<code>use_frameworks!</code>即可，由于需要支持动态库，所以要求项目的最低版本是iOS 8。Pods采用动态库的主要原因是因为目前iOS操作系统中并没有内置Swift的运行时支持库，这种情况下所有包含Swift的代码无法被编译为静态库，Swift的运行时支持都是通过dylib的形式嵌入的。我们可以解压IAP安装包，在 frameworks 目录下，可以看到Swift相关的dylib: </p>
+<p><img src="/img/swift-foundation-dylib-screenshot.png" alt=""></p>
 <p>参考：</p>
 <ul>
 <li><a href="https://blog.cocoapods.org/CocoaPods-0.36/" target="_blank" rel="external">https://blog.cocoapods.org/CocoaPods-0.36/</a></li>
@@ -417,6 +430,12 @@ the Observer pattern, the Iterator pattern, and functional programming</code>。
 <ul>
 <li><a href="http://iosre.com/t/rxswift-runtime-oc-ios/3727" target="_blank" rel="external">http://iosre.com/t/rxswift-runtime-oc-ios/3727</a></li>
 </ul>
+<h1 id="坑"><a href="#坑" class="headerlink" title="坑"></a>坑</h1><ul>
+<li>编译 &amp; 打包 速度</li>
+<li>Xcode莫名其妙crash</li>
+<li>安装包大小</li>
+<li>语法变化太快，不能做到向下兼容</li>
+</ul>
 
       
     </div>
@@ -438,8 +457,6 @@ the Observer pattern, the Iterator pattern, and functional programming</code>。
     <footer class="post-footer">
       
         <div class="post-tags">
-          
-            <a href="/tags/iOS/" rel="tag">#iOS</a>
           
             <a href="/tags/Swift/" rel="tag">#Swift</a>
           
@@ -539,7 +556,7 @@ the Observer pattern, the Iterator pattern, and functional programming</code>。
           
             <div class="site-state-item site-state-categories">
               
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">分类</span>
               
             </div>
@@ -548,7 +565,7 @@ the Observer pattern, the Iterator pattern, and functional programming</code>。
           
             <div class="site-state-item site-state-tags">
               
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">标签</span>
               
             </div>
@@ -577,7 +594,7 @@ the Observer pattern, the Iterator pattern, and functional programming</code>。
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#常用框架"><span class="nav-number">1.</span> <span class="nav-text">常用框架</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#CocoaPods"><span class="nav-number">1.1.</span> <span class="nav-text">CocoaPods</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Swift-Pods"><span class="nav-number">1.1.1.</span> <span class="nav-text">Swift + Pods</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#问题"><span class="nav-number">1.1.2.</span> <span class="nav-text">问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关于modules"><span class="nav-number">1.1.3.</span> <span class="nav-text">关于modules</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#图片"><span class="nav-number">1.2.</span> <span class="nav-text">图片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网络"><span class="nav-number">1.3.</span> <span class="nav-text">网络</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#FRP"><span class="nav-number">1.4.</span> <span class="nav-text">FRP</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#RxSwift-or-RAC"><span class="nav-number">1.4.1.</span> <span class="nav-text">RxSwift or RAC?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hot-vs-Cold-amp-Side-Effect"><span class="nav-number">1.4.2.</span> <span class="nav-text">Hot vs Cold & Side Effect</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他框架"><span class="nav-number">1.5.</span> <span class="nav-text">其他框架</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Mantle"><span class="nav-number">1.5.1.</span> <span class="nav-text">Mantle</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Masonry"><span class="nav-number">1.5.2.</span> <span class="nav-text">Masonry</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#业务开发"><span class="nav-number">2.</span> <span class="nav-text">业务开发</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#源文件"><span class="nav-number">2.1.</span> <span class="nav-text">源文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Controller"><span class="nav-number">2.2.</span> <span class="nav-text">Controller</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MVVM-MVP-Redux-Protocol-Oriented-Programming"><span class="nav-number">2.3.</span> <span class="nav-text">MVVM/MVP/Redux/Protocol-Oriented Programming</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Redux"><span class="nav-number">2.3.1.</span> <span class="nav-text">Redux</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Protocol-Oriented-Programming"><span class="nav-number">2.3.2.</span> <span class="nav-text">Protocol-Oriented Programming</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#转变思维"><span class="nav-number">3.</span> <span class="nav-text">转变思维</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#常用框架"><span class="nav-number">1.</span> <span class="nav-text">常用框架</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#CocoaPods"><span class="nav-number">1.1.</span> <span class="nav-text">CocoaPods</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Swift-Pods"><span class="nav-number">1.1.1.</span> <span class="nav-text">Swift + Pods</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#问题"><span class="nav-number">1.1.2.</span> <span class="nav-text">问题</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#关于modules"><span class="nav-number">1.1.3.</span> <span class="nav-text">关于modules</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#图片"><span class="nav-number">1.2.</span> <span class="nav-text">图片</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#网络"><span class="nav-number">1.3.</span> <span class="nav-text">网络</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#FRP"><span class="nav-number">1.4.</span> <span class="nav-text">FRP</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#RxSwift-or-RAC"><span class="nav-number">1.4.1.</span> <span class="nav-text">RxSwift or RAC?</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Hot-vs-Cold-amp-Side-Effect"><span class="nav-number">1.4.2.</span> <span class="nav-text">Hot vs Cold & Side Effect</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其他框架"><span class="nav-number">1.5.</span> <span class="nav-text">其他框架</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Mantle"><span class="nav-number">1.5.1.</span> <span class="nav-text">Mantle</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Masonry"><span class="nav-number">1.5.2.</span> <span class="nav-text">Masonry</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#业务开发"><span class="nav-number">2.</span> <span class="nav-text">业务开发</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#源文件"><span class="nav-number">2.1.</span> <span class="nav-text">源文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Controller"><span class="nav-number">2.2.</span> <span class="nav-text">Controller</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#MVVM-MVP-Redux-Protocol-Oriented-Programming"><span class="nav-number">2.3.</span> <span class="nav-text">MVVM/MVP/Redux/Protocol-Oriented Programming</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#Redux"><span class="nav-number">2.3.1.</span> <span class="nav-text">Redux</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Protocol-Oriented-Programming"><span class="nav-number">2.3.2.</span> <span class="nav-text">Protocol-Oriented Programming</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#转变思维"><span class="nav-number">3.</span> <span class="nav-text">转变思维</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#坑"><span class="nav-number">4.</span> <span class="nav-text">坑</span></a></li></ol></div>
             
           </div>
         </section>

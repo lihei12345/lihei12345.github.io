@@ -245,6 +245,25 @@
           </span>
 
           
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/iOS/" itemprop="url" rel="index">
+                    <span itemprop="name">iOS</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
 
           
             
@@ -276,7 +295,8 @@
       
         
           
-            <h1 id="常用框架"><a href="#常用框架" class="headerlink" title="常用框架"></a>常用框架</h1><h2 id="CocoaPods"><a href="#CocoaPods" class="headerlink" title="CocoaPods"></a>CocoaPods</h2><h3 id="Swift-Pods"><a href="#Swift-Pods" class="headerlink" title="Swift + Pods"></a>Swift + Pods</h3><p>Cocoapods从0.36开始通过动态库的形式提供对Swift项目的支持。我们只需要在Podfile中注明，<code>use_frameworks!</code>即可，要求项目的最低版本是iOS 8。pods采用动态库的主要原因是因为目前iOS操作系统中并没有自带Swift的运行时支持库，所以所有包含Swift的代码无法被编译为静态库。</p>
+            <h1 id="常用框架"><a href="#常用框架" class="headerlink" title="常用框架"></a>常用框架</h1><h2 id="CocoaPods"><a href="#CocoaPods" class="headerlink" title="CocoaPods"></a>CocoaPods</h2><h3 id="Swift-Pods"><a href="#Swift-Pods" class="headerlink" title="Swift + Pods"></a>Swift + Pods</h3><p>Cocoapods从0.36开始通过动态库的形式提供对Swift项目的支持。我们只需要在Podfile中注明，<code>use_frameworks!</code>即可，由于需要支持动态库，所以要求项目的最低版本是iOS 8。Pods采用动态库的主要原因是因为目前iOS操作系统中并没有内置Swift的运行时支持库，这种情况下所有包含Swift的代码无法被编译为静态库，Swift的运行时支持都是通过dylib的形式嵌入的。我们可以解压IAP安装包，在 frameworks 目录下，可以看到Swift相关的dylib: </p>
+<p><img src="/img/swift-foundation-dylib-screenshot.png" alt=""></p>
 <p>参考：</p>
 <ul>
 <li><a href="https://blog.cocoapods.org/CocoaPods-0.36/" target="_blank" rel="external">https://blog.cocoapods.org/CocoaPods-0.36/</a></li>
@@ -410,6 +430,12 @@ the Observer pattern, the Iterator pattern, and functional programming</code>。
 <p>参考：</p>
 <ul>
 <li><a href="http://iosre.com/t/rxswift-runtime-oc-ios/3727" target="_blank" rel="external">http://iosre.com/t/rxswift-runtime-oc-ios/3727</a></li>
+</ul>
+<h1 id="坑"><a href="#坑" class="headerlink" title="坑"></a>坑</h1><ul>
+<li>编译 &amp; 打包 速度</li>
+<li>Xcode莫名其妙crash</li>
+<li>安装包大小</li>
+<li>语法变化太快，不能做到向下兼容</li>
 </ul>
 
           
@@ -842,7 +868,7 @@ the Observer pattern, the Iterator pattern, and functional programming</code>。
           
             <div class="site-state-item site-state-categories">
               
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">分类</span>
               
             </div>
@@ -851,7 +877,7 @@ the Observer pattern, the Iterator pattern, and functional programming</code>。
           
             <div class="site-state-item site-state-tags">
               
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">标签</span>
               
             </div>
